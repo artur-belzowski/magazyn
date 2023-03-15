@@ -1,8 +1,11 @@
 import json
-firma = {
-    'stan_konta':10000,
-    'stan_magazynu':{},
-    'historia': []
+import os
+
+if not os.path.exists('firma.json):
+    firma = {
+        'stan_konta':0,
+        'stan_magazynu':{},
+        'historia': []
 }
 while True:
 
